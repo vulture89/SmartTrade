@@ -48,10 +48,10 @@ public class SplashScreen extends javax.swing.JFrame {
     }
 
     private int getDelayForProgress(int progress) {
-        if (progress == 100) return 3000;
-        if (progress <= 30) return 100;
-        if (progress <= 60) return 200;
-        return 20;
+        if (progress <= 30) return 1;
+        if (progress <= 60) return 5;
+        if (progress == 100) return 7;
+        return 10;
     }
 
     @SuppressWarnings("unchecked")
